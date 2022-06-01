@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Bose headphones</title>
+
+       <!--  <style>
+            * {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                height: 100%;
+                /* fix height to 100% for IE */
+                max-height: 100%;
+                /* fix height for other browsers */
+                overflow-x: hidden;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+            }
+
+            html,
+            body {
+                width: 100%;
+                scroll-behavior: smooth;
+                height: 100%;
+                height: 100vh;
+                font-size: 62.5%;
+                font-family: "Roboto", sans-serif;
+                background-color: #fff;
+            }
+
+            .app-content {
+                position: relative;
+                font-family: "Roboto"sans-serif;
+                font-weight: 400;
+                width: 100%;
+                height: auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+
+            .app-content .m-auto {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                max-width: 1140px;
+                padding: 2rem;
+                font-size: 1.6rem;
+                z-index: 5;
+            }
+
+            .app-content .m-auto .header {
+                position: absolute;
+                width: 100%;
+                font-size: 1.6rem;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                z-index: 9999;
+            }
+
+            .app-content .m-auto .header-menus {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                width: 100%;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                gap: 2.5rem;
+            }
+
+            .app-content .m-auto .header-menus .logo {
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .header-menus img {
+                width: 15%;
+            }
+
+            .app-content .m-auto .header-menus .menu {
+                width: 100%;
+            }
+
+            .app-content .m-auto .header-menus .menu span {
+                padding: 0 2rem;
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .header-options {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                width: auto;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+            .app-content .m-auto .header-options img {
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .container {
+                width: 100%;
+                height: auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                padding: 8rem 0;
+                font-size: 1.6rem;
+            }
+
+            .app-content .m-auto .container-text {
+                width: 100%;
+                padding: 3rem 0;
+            }
+
+            .app-content .m-auto .container-text h2 {
+                width: 80%;
+                font-size: 5.5rem;
+                font-weight: 800;
+            }
+
+            .app-content .m-auto .container-text .color-select {
+                padding: 2rem 0;
+            }
+
+            .app-content .m-auto .container-text .color-select .colors {
+                padding: 1.3rem 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .app-content .m-auto .container-text .color-select .colors div:nth-child(1) {
+                width: 32px;
+                height: 38px;
+            }
+
+            .app-content .m-auto .container-text .color-select .colors div:nth-child(2) {
+                width: 32px;
+                height: 32px;
+                border-radius: 5rem;
+                background: #feb554;
+            }
+
+            .app-content .m-auto .container-text .color-select .colors div:nth-child(3) {
+                width: 32px;
+                height: 32px;
+                border-radius: 5rem;
+                background: #606651;
+            }
+
+            .app-content .m-auto .container-text .color-select .colors div:nth-child(4) {
+                width: 32px;
+                height: 32px;
+                border-radius: 5rem;
+                background: #edab7b;
+            }
+
+            .app-content .m-auto .container-text .color-select .colors div:nth-child(5) {
+                width: 32px;
+                height: 32px;
+                border-radius: 5rem;
+                background: #c56a72;
+            }
+
+            .app-content .m-auto .container-text .color-select .buy {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                font-size: 1.6rem;
+                padding: 4rem 0;
+                gap: 3rem;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .app-content .m-auto .container-text .color-select .buy button {
+                width: 190px;
+                height: 48px;
+                color: #fff;
+                background: #191919;
+                border-radius: 5rem;
+                border: none;
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .container-text .color-select .buy button:hover {
+                width: 180px;
+            }
+
+            .app-content .m-auto .container .container-headphone {
+                position: relative;
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+
+            .app-content .m-auto .container .container-headphone .bitmap {
+                position: absolute;
+                z-index: 99999;
+                left: 9rem;
+            }
+
+            .app-content .m-auto .container .container-headphone .gradiente {
+                position: absolute;
+                z-index: 3;
+                top: -10rem;
+                right: -20.5rem;
+            }
+
+            .app-content .m-auto .container .container-headphone .union {
+                position: relative;
+                z-index: 0;
+                top: -10rem;
+                right: -25.9rem;
+            }
+
+            .app-content .m-auto .slide {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                gap: 2rem;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .app-content .m-auto .slide .left,
+            .app-content .m-auto .slide .rigth {
+                width: 3rem;
+                height: 5rem;
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .slide-elements {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                gap: 2rem;
+                overflow-x: auto;
+            }
+
+            .app-content .m-auto .slide-elements img {
+                width: 18.5rem;
+            }
+
+            .app-content .m-auto .slide-elements::-webkit-scrollbar {
+                display: none;
+            }
+
+            .app-content .m-auto .sub-menu {
+                width: 100%;
+                font-size: 1.6rem;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                padding: 6rem 6rem;
+            }
+
+            .app-content .m-auto .sub-menu p {
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .sub-menu p:first-child {
+                width: 100%;
+                padding: 2rem;
+                font-weight: 700;
+                border-top: 1px solid #191919;
+                border-left: 1px solid #191919;
+                border-right: 1px solid #191919;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                border-radius: 12px 12px 0px 0px;
+                text-align: center;
+            }
+
+            .app-content .m-auto .sub-menu p:not(.first) {
+                width: 100%;
+                padding: 2rem;
+                font-weight: 700;
+                border-bottom: 1px solid #191919;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            .app-content .m-auto .overview {
+                width: 100%;
+                height: auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                font-size: 1.6rem;
+                gap: 10rem;
+            }
+
+            .app-content .m-auto .overview-immerse {
+                position: relative;
+                width: 100%;
+                margin-left: -4.5rem;
+            }
+
+            .app-content .m-auto .overview-immerse .waves-image {
+                position: absolute;
+                left: -5rem;
+                z-index: -1;
+            }
+
+            .app-content .m-auto .overview-immerse img:last-child {
+                margin-left: 9rem;
+                margin-top: 9rem;
+            }
+
+            .app-content .m-auto .overview-text {
+                width: 100%;
+            }
+
+            .app-content .m-auto .overview-text h2 {
+                font-size: 4.5rem;
+                font-weight: 800;
+            }
+
+            .app-content .m-auto .overview-text p {
+                width: 82.5%;
+                line-height: 1.3;
+                font-size: 1.5rem;
+                text-align: justify;
+            }
+
+            .app-content .m-auto .premium {
+                width: 50%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 4.5rem 0;
+            }
+
+            .app-content .m-auto .premium-text {
+                padding: 4rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .app-content .m-auto .premium-text h2 {
+                font-size: 4rem;
+                font-weight: 800;
+            }
+
+            .app-content .m-auto .premium-text p {
+                padding: 1rem 0;
+                line-height: 2rem;
+            }
+
+            .app-content .m-auto .headphone-union {
+                position: relative;
+                width: 100%;
+                height: auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .app-content .m-auto .headphone-union .union-left {
+                position: absolute;
+                margin-left: -21rem;
+            }
+
+            .app-content .m-auto .headphone-union .headphone-premium {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                margin-left: 6rem;
+            }
+
+            .app-content .m-auto .headphone-union .headphone-premium img {
+                width: 80rem;
+            }
+
+            .app-content .m-auto .headphone-union .headphone-premium .impact {
+                position: absolute;
+                width: 349px;
+                height: auto;
+                padding: 3rem;
+                background: #ffffff;
+                top: 16rem;
+                left: 72rem;
+                text-align: justify;
+                -webkit-box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+            }
+
+            .app-content .m-auto .headphone-union .union-rigth {
+                position: absolute;
+                margin-left: 88rem;
+            }
+
+            .app-content .m-auto .baterry-life {
+                width: 100%;
+                height: auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                padding: 8rem 2rem;
+            }
+
+            .app-content .m-auto .baterry-life-text {
+                width: 100%;
+            }
+
+            .app-content .m-auto .baterry-life-text h2 {
+                font-size: 4.5rem;
+                font-weight: 800;
+            }
+
+            .app-content .m-auto .baterry-life-text p {
+                padding: 2rem 0;
+                line-height: 2rem;
+                font-size: 1.6rem;
+                text-align: justify;
+            }
+
+            .app-content .m-auto .baterry-life-img {
+                width: 100%;
+            }
+
+            .app-content .m-auto .baterry-life-img .man {
+                padding: 4rem 0;
+            }
+
+            .app-content .m-auto .baterry-life-img .man .back {
+                background-color: #feb554;
+                width: 28rem;
+                height: 39rem;
+                margin-left: 20rem;
+                border-radius: 1rem;
+            }
+
+            .app-content .m-auto .baterry-life-img .man .back .guy {
+                position: absolute;
+                width: 70rem;
+                margin-left: -33rem;
+                top: 2rem;
+                z-index: 3;
+            }
+
+            .app-content .m-auto .baterry-life-img .man .back .baterry {
+                width: 13rem;
+                position: absolute;
+                z-index: 8;
+                right: 5rem;
+                bottom: 10rem;
+            }
+
+            .app-content .m-auto .baterry-life-img .man .back .waves {
+                width: 42rem;
+                position: absolute;
+                top: 7rem;
+                right: 3rem;
+            }
+
+            .app-content .m-auto .related-products {
+                width: 100%;
+                height: 100%;
+                padding: 4rem 4rem 14rem 0;
+                z-index: -1;
+            }
+
+            .app-content .m-auto .related-products-topic {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                padding-bottom: 3rem;
+            }
+
+            .app-content .m-auto .related-products-topic p {
+                border: 1px solid;
+                border-radius: 2rem;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .related-products-cards {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                gap: 2rem;
+                padding: 1rem;
+                overflow-x: auto;
+            }
+
+            .app-content .m-auto .related-products-cards-card {
+                -webkit-box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 0px 19px -7px rgba(0, 0, 0, 0.15);
+                border-radius: 1rem;
+                width: 23rem;
+                padding: 2rem;
+            }
+
+            .app-content .m-auto .related-products-cards-card img {
+                width: 18rem;
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+
+            .app-content .m-auto .related-products-cards-card h2 {
+                font-size: 1.6rem;
+                padding: 2rem 0;
+            }
+
+            .app-content .m-auto .related-products-cards::-webkit-scrollbar {
+                display: none;
+            }
+
+            .app-content .m-auto .footer {
+                width: 100%;
+                color: #fff;
+            }
+
+            .app-content .m-auto .footer-card {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                gap: 4rem;
+            }
+
+            .app-content .m-auto .footer-card img {
+                margin-top: -16.5rem;
+            }
+
+            .app-content .m-auto .footer-card-text {
+                width: 50%;
+            }
+
+            .app-content .m-auto .footer-card-text h2 {
+                font-size: 4rem;
+                font-weight: 800;
+            }
+
+            .app-content .m-auto .footer-card-text p {
+                font-size: 1.6rem;
+                font-weight: 800;
+            }
+
+            .app-content .m-auto .footer-card-text .form {
+                padding: 3rem 0;
+            }
+
+            .app-content .m-auto .footer-card-text .form input {
+                width: 22rem;
+                height: 4rem;
+                border-radius: 3rem;
+                border: none;
+                padding: 1.5rem;
+                font-size: 1.6rem;
+            }
+
+            .app-content .m-auto .footer-card-text .form button {
+                width: 12rem;
+                height: 4rem;
+                border-radius: 3rem;
+                border: none;
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .footer-card-text .form button:hover {
+                background-color: darkgrey;
+            }
+
+            .app-content .m-auto .and-footer {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                color: #fff;
+                gap: 4rem;
+                padding: 2rem;
+            }
+
+            .app-content .m-auto .and-footer img {
+                cursor: pointer;
+            }
+
+            .app-content .m-auto .and-footer p {
+                cursor: pointer;
+            }
+
+            .color {
+                background: #f9f9f9;
+                z-index: 5;
+            }
+
+            .footer-color {
+                background: #191919;
+                height: 52.3rem;
+            }
+
+            .and {
+                margin-top: 0.3rem;
+                background-color: #000;
+            }
+
+            /*# sourceMappingURL=style.css.map */
+        </style> -->
+    </head>
+
+    <body>
+        <section class="app-content">
+            <div class="m-auto">
+                <div class="header">
+                    <div class="header-menus">
+                        <img class="logo" src="./assets/logo.svg" alt="">
+                        <div class="menu">
+                            <span>Headphones</span>
+                            <span>Speakers</span>
+                            <span>Audio sunglasses</span>
+                            <span>support</span>
+                        </div>
+                    </div>
+                    <div class="header-options">
+                        <img src="./assets/cart.png" alt="Carrinho de compra Boses">
+                        <img src="./assets/search.png" alt="Pesquisar em boses">
+                        <img src="./assets/user.png" alt="user em boses">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container-text">
+                        <h2>QuietComfort 35 wireless headphones II</h2>
+                        <div class="color-select">
+                            <p>Select your color:</p>
+                            <div class="colors">
+                                <div>
+                                    <img src="./assets/silver-color.png" alt="">
+                                    <p>silver</p>
+                                </div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="buy">
+                                <h3>$229.95</h3>
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-headphone">
+                        <div class="bitmap">
+                            <img src="/assets/Bitmap.svg" alt="">
+                        </div>
+                        <img class="gradiente" src="./assets/gradiente.png" alt="">
+                        <div class="union">
+                            <img src="./assets/Union.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img class="left" src="./assets/left.png" alt="">
+                    <div class="slide-elements">
+                        <div class="headphone">
+                            <img src="./assets/headphone-front.png" alt="">
+                        </div>
+                        <div class="headphone">
+                            <img src="./assets/headphone-lado.png" alt="">
+                        </div>
+                        <div class="headphone">
+                            <img src="./assets/headphone-inclinado.png" alt="">
+                        </div>
+                        <div class="headphone">
+                            <img src="./assets/coluna.png" alt="">
+                        </div>
+                        <div class="headphone">
+                            <img src="./assets/coluna2.png" alt="">
+                        </div>
+                        <div class="headphone">
+                            <img src="./assets/headphone-front.png" alt="">
+                        </div>
+                        <div class="headphone">
+                            <img src="./assets/headphone-front.png" alt="">
+                        </div>
+                    </div>
+                    <img class="rigth" src="./assets/rigth.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="app-content">
+            <div class="m-auto">
+                <div class="sub-menu">
+                    <p class="first">Overview</p>
+                    <p>Specs</p>
+                    <p>Reviews</p>
+                    <p>Accessories</p>
+                    <p>support</p>
+                </div>
+                <div class="overview">
+                    <div class="overview-immerse">
+                        <img class="waves-image" src="./assets/waves.svg" alt="">
+                        <img src="./assets/ladies.png" alt="">
+                    </div>
+                    <div class="overview-text">
+                        <h2>Perfect sound
+                            immersive world</h2>
+                        <p>QuietComfort 35 wireless headphones II are engineered with renowned noise cancellation. With
+                            the Google Assistant and
+                            Amazon Alexa built-in, you have instant access to millions of songs, playlists and
+                            more—hands free.</p>
+                    </div>
+                </div>
+                <div class="premium">
+                    <div class="premium-text">
+                        <h2>Premium design</h2>
+                        <p>When you want to take your music anywhere, you need headphones built to keep up. With
+                            impact-resistant materials,
+                            glass-filled nylon, and corrosion-resistant stainless steel, they’re engineered to
+                            survive life on the go.
+                        </p>
+                    </div>
+                </div>
+                <div class="headphone-union">
+                    <div class="union-left"><img src="./assets/union-left.png" alt=""></div>
+                    <div class="headphone-premium">
+                        <img src="./assets/headphones.png" alt="">
+                        <div class="impact">
+                            <h2>Impact resistant</h2>
+                            <p>Designed to handle life on the go.</p>
+                        </div>
+                    </div>
+                    <div class="union-rigth"><img src="./assets/union-rigth.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="app-content">
+            <div class="m-auto">
+                <div class="baterry-life">
+                    <div class="baterry-life-text">
+                        <h2>Up to 20 hours battery life</h2>
+                        <p>Enjoy up to 20 hours of listening, enough time to pore through this entire playlist. So you
+                            can
+                            keep the music — or the
+                            quiet — going all day long. And when it finally runs down, a quick 15-minute charge gives
+                            you
+                            another 2.5 hours.</p>
+                    </div>
+                    <div class="baterry-life-img">
+                        <div class="man">
+                            <div class="back">
+                                <img class="guy" src="./assets/guy.png" alt="">
+                                <img class="baterry" src="./assets/battery.png" alt="">
+                                <img class="waves" src="./assets/waves2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="app-content color">
+            <div class="m-auto">
+                <div class="related-products">
+                    <div class="related-products-topic">
+                        <h2>Related producs</h2>
+                        <p>Show All</p>
+                    </div>
+                    <div class="related-products-cards">
+                        <div class="related-products-cards-card">
+                            <img src="./assets/2headphones.png" alt="">
+                            <h2>QuietComfort 35 wireless headphones II</h2>
+                            <p>$449.99</p>
+                        </div>
+                        <div class="related-products-cards-card">
+                            <img src="./assets/2headphones.png" alt="">
+                            <h2>QuietComfort 35 wireless headphones II</h2>
+                            <p>$449.99</p>
+                        </div>
+                        <div class="related-products-cards-card">
+                            <img src="./assets/2headphones.png" alt="">
+                            <h2>QuietComfort 35 wireless headphones II</h2>
+                            <p>$449.99</p>
+                        </div>
+                        <div class="related-products-cards-card">
+                            <img src="./assets/2headphones.png" alt="">
+                            <h2>QuietComfort 35 wireless headphones II</h2>
+                            <p>$449.99</p>
+                        </div>
+                        <div class="related-products-cards-card">
+                            <img src="./assets/2headphones.png" alt="">
+                            <h2>QuietComfort 35 wireless headphones II</h2>
+                            <p>$449.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="app-content footer-color">
+            <div class="m-auto">
+                <div class="footer">
+                    <div class="footer-card">
+                        <img src="./assets/girl-footer.png" alt="">
+                        <div class="footer-card-text">
+                            <h2>Being first has its perks</h2>
+                            <p>Sign up to get more information about Bose, exclusive first looks at promotions, new
+                                products
+                                and more.
+                            </p>
+                            <div class="form">
+                                <input type="email" placeholder="Your e-mail here">
+                                <button>SIGN UP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="app-content and">
+            <div class="m-auto">
+                <div class="and-footer">
+                    <img src="./assets/logo-white.png" alt="">
+                    <p>Headphones</p>
+                    <p>Speakers</p>
+                    <p>Audio sunglasses</p>
+                    <p>Support</p>
+                    <p>Contact</p>
+                </div>
+                <div class="copy">
+                     <p><a target="_blank" href="https://github.com/Silva-jr">José da Silva</a> © 2021. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
